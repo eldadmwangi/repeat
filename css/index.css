@@ -1,0 +1,143 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background: rgb(0,100,0);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:#fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.menu-bar.fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li :hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menu-bar ul li :hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.slider{
+    height: 500px;
+    width: 100%;
+    background-color: gray;
+    border: dotted;
+    margin-top:30px ;
+    overflow: hidden;
+}
+.sliderchild{
+    height: 500px;
+    width: 500%;
+    background-color:green;
+    animation: slider infinite 20s 2s;
+}
+.imagecon{
+    height:500px;
+    width: 20%;
+    background-color: grey;
+    float: left;
+    line-height: 500px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.imagecon:nth-child(1){
+    background-image: url("images/tech.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.imagecon:nth-child(2){
+    background-image: url("images/tech1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.imagecon:nth-child(3){
+    background-image: url("images/tech1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.imagecon:nth-child(4){
+    background-image: url("images/tech.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.imagecon:nth-child(5){
+    background-image: url("images/tech1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+
+@keyframes slider{
+    12.5%{
+    margin-left:-100%;
+}
+25%{
+    margin-left: -100%;
+}
+37.5% 
+{
+margin-left:-200%;
+}
+50%
+{
+margin-left: -200%;
+}
+62.5%
+{
+    margin-left: -300%;
+}
+75%
+{
+    margin-left: -300%;
+}
+87.5%
+{ 
+    margin-left: -400%;
+}
+100%
+{
+    margin-left: -400%;
+}
+
+
+
+
+
